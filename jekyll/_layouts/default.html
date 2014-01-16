@@ -1,35 +1,37 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset=utf-8 />
-  <title> {% if page.title %} {{ page.title }} | {% endif %} Thomas Arni, Webentwickler </title>
-  <link rel="stylesheet" href="/css/style.css" />
-</head>
-<body>
- 
-  <div id="main">
- 
-    <header>
-      <h1>Thomas Arni</h1>
-    <header>
- 
-    {{ content }}
- 
-    <hr>
-    <footer>
-      <p>&copy; Thomas Arni 2014</p>
-    </footer>
- 
-  </div>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de-ch">
 
-  ga('create', 'UA-47162644-1', 'thomasarni.com');
-  ga('send', 'pageview');
+  {% include head.html %}
 
-  </script>
-</body>
+  <body>
+
+    <header class="masthead">
+      <div class="masthead-inner">
+        <h1><a href="/">{{ site.title }}</a></h1>
+        <p class="lead">{{ site.description }}</p>
+
+        <div class="colophon">
+          <ul class="colophon-links">
+            <li>
+            </li>
+          </ul>
+          <p>&copy; 2014</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="content container">
+      {{ content }}
+    </div>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-47162644-1', 'thomasarni.com');
+      ga('send', 'pageview');
+    </script>
+
+  </body>
 </html>

@@ -1,0 +1,8 @@
+title:        Thomas Arni
+tagline:      'Hyde, a Jekyll theme'
+description:  'Ehemann, Vater, Webentwickler und jewiger Student.'
+url:          http://thomasarni.com
+markdown:     rdiscount
+permalink:    pretty
+pygments:     true
+paginate:     5
